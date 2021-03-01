@@ -1,0 +1,51 @@
+/* GENERAL */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('font/raleway/Raleway-Regular.ttf') ;
+}
+
+body
+{
+    padding-left : 10px;
+    padding-right: 10px; /* Créé une marge intérieur sur toute la page */
+}
+
+a
+{
+    text-decoration : none; /* enleve le soulignement des liens */
+}
+
+a:visited
+{
+    color : #0065fc; /* lorsque le lien est cliqué = même couleur */
+}
+
+p
+{
+    font-size: 18px;
+    font-family: 'Raleway', Arial, sans-serif; /*definit la taille et la police des paragraphes*/
+}
+
+/* PARTIE HEADER */
+
+header
+{
+    display:flex;
+    justify-content: space-between;   /* aligne les elements et les place */
+    align-items: center;
+}
+
+#logo img
+{
+    width: 100x;
+    height: 50px;    /* Redimensionne le logo */
+}
+
+header p
+{
+    font-weight:bold; /* Met 's'inscrire en gras /*
+}
+
+/* PARTIE NAVIGATION */
