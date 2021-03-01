@@ -3,7 +3,8 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url('font/raleway/Raleway-Regular.ttf') ;
+    src: url('font/raleway/Raleway-Regular.ttf'),
+    src: url('font/raleway/Raleway-Bold.ttf');
 }
 
 a
@@ -14,9 +15,19 @@ a
 
 *
 {
+    margin: 0; /* pas de marges, ni d'espacements sur ts les elements */
+    padding: 0;
+    border: 0;
     font-size: 15px;
     font-family: 'Raleway', Arial, sans-serif; /*definit la taille et la police des paragraphes*/
 }
+
+h1
+{
+    font-size : 20px;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
+}
+
 
 /* PARTIE HEADER */
 
@@ -25,6 +36,7 @@ header
     display:flex;
     justify-content: space-between;   /* aligne les elements et les place */
     align-items: center;
+    margin-top:15px;
 }
 
 #logo
@@ -51,8 +63,9 @@ header a
 
 /* PARTIE NAVIGATION */
 
-nav{
-   
+nav
+{
+   margin-top : 20px;
 }
 ul
 {
@@ -80,3 +93,60 @@ nav ul li a:hover
     color: #0065fc;
 }
 
+/* SECTION RECHERCHE */
+
+#recherche
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#recherche h1
+{
+    margin-bottom : 15px;
+    margin-left: 2px; /* alignement avec l'icone i */
+}
+
+#recherche p
+{
+    margin-left: 2px; /* alignement avec l'icone */
+    margin-bottom: 20px;
+}
+
+#point
+{   
+    position:relative;
+    left:2px;           /* decale l'icone pour coller a la barre de recherche */
+    background-color: #f2f2f2;
+    border-top-left-radius : 10px; /* arrondi les angles de l'icone */
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    
+}
+
+#search
+{
+    font-weight: bold;
+    font-size: 15px;
+    width: 200px;
+    padding: 13px;
+    padding-bottom: 12px;
+    border-top: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
+}
+
+#bouton_rechercher
+{
+    visibility: hidden; 
+}
+
+#loupe
+{
+    position: relative;
+    left: -20px;
+    padding: 15px;
+    color:white;
+    border-radius: 15px;
+    background-color: #0065fc;
+}
