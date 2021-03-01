@@ -23,8 +23,8 @@
 
         <nav>
             <ul>
-                <li><a href="#" class="effethover">Hébergements</a></li>
-                <li><a href="#" class="effethover">Activités</a></li>
+                <a href="#"><li>Hébergements</li></a>
+                <a href="#"><li>Activités</li></a>
             </ul>
         </nav>
 
@@ -40,7 +40,6 @@
                 <i id="point" class="fas fa-map-marker-alt"></i>
                 <input type="search" value ="Marseille,France" id="search"/>
                 <button id="loupe" type="submit" class="icone-loupe"><i class="fas fa-search"></i></button>
-                
                 <input id="bouton_rechercher" type="submit" value="Rechercher"/>
                 
             </form>
@@ -53,24 +52,51 @@
 
             <h2>Filtres</h2>
 
-            <div class="bouton">
-                <i class="fas fa-money-bill-wave"></i>
-                <a href="#">Économique</a>
-            </div>
+            <div id="choix_filtre">
+                <a href="#">
+                    <div class="bouton">
+                        <div class="bouton-logo">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="bouton-text">
+                            <p>Économique<p>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="bouton">
-                <i class="fas fa-child"></i>
-                <a href="#">Familial</a>
-            </div>
+                <a href="#">
+                    <div class="bouton">
+                        <div class="bouton-logo">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="bouton-text">
+                            <p>Familial</p>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="bouton">
-                <i class="fas fa-heart"></i>
-                <a href="#">Romantique</a>
-            </div>
+                <a href="#">
+                    <div class="bouton">
+                        <div class="bouton-logo">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="bouton-text">
+                            <p>Romantique</p>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="bouton">
-                <i class="fas fa-dog"></i>
-                <a href="#">Animaux autorisés</a>
+                <a href="#">
+                    <div class="bouton">
+                        <div class="bouton-logo">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <div class="bouton-text">
+                            <p>Animaux autorisés</p>
+                        </div>
+                    </div>
+                </a>
+
             </div>
 
         </section>
