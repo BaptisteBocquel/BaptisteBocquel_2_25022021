@@ -6,25 +6,15 @@
     src: url('font/raleway/Raleway-Regular.ttf') ;
 }
 
-body
-{
-    padding-left : 10px;
-    padding-right: 10px; /* Créé une marge intérieur sur toute la page */
-}
-
 a
 {
     text-decoration : none; /* enleve le soulignement des liens */
+    color: black; /* Annule le bleu d'origine des liens */
 }
 
-a:visited
+*
 {
-    color : #0065fc; /* lorsque le lien est cliqué = même couleur */
-}
-
-p
-{
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Raleway', Arial, sans-serif; /*definit la taille et la police des paragraphes*/
 }
 
@@ -37,6 +27,11 @@ header
     align-items: center;
 }
 
+#logo
+{
+    margin-left: 30px; /* crée une marge à gauche du logo */
+}
+
 #logo img
 {
     width: 100x;
@@ -45,7 +40,43 @@ header
 
 header p
 {
-    font-weight:bold; /* Met 's'inscrire en gras /*
+    font-weight:bold; /* Met 's'inscrire en gras */
+    margin-right : 30px;
+}
+
+header a 
+{
+    color : #0065fc;
 }
 
 /* PARTIE NAVIGATION */
+
+nav{
+   
+}
+ul
+{
+    display :flex;
+    list-style-type: none; /*met les li sur la même ligne */
+    padding: 0;
+}
+
+ul li
+{ 
+    padding-bottom: 5px;
+    width: 50%; /* dimensionne les li pour qu'ils prennent toute la largeur */
+    text-align:center;
+    border-bottom : solid 2px #f2f2f2; /* créé la bordure grise */
+}
+
+nav ul li:hover 
+{
+    border-bottom : solid 2px #0065fc; 
+      
+}
+
+nav ul li a:hover
+{
+    color: #0065fc;
+}
+
