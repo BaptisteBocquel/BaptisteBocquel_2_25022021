@@ -186,7 +186,7 @@ nav ul a:hover
 }
 .bouton 
 {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 15px;
     display: flex;
     align-items: center;
@@ -220,6 +220,14 @@ nav ul a:hover
     border-bottom-right-radius:25px;
     padding-top: 11px;
     padding-bottom: 11px;
+}
+
+.bouton .bouton-text:hover
+{
+    color : #0065fc;
+    border-top: #deebff solid 2px;
+    border-bottom:#deebff solid 2px;
+    border-right: #deebff solid 2px;
 }
 
 .bouton-text p
