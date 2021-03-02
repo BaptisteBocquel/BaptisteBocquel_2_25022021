@@ -45,6 +45,16 @@ h3
     font-weight: bold;
 }
 
+.rempli
+{
+    color: #0065fc; /*etoile rempli en bleu */
+}
+
+.vide
+{
+    color : #f2f2f2; /*etoile 'vide' remplies en grises */
+}
+
 
 /* PARTIE HEADER */
 
@@ -310,6 +320,7 @@ nav ul a:hover
 
 .coeur_eau
 {
+    width: 67%;
     background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 
@@ -326,6 +337,7 @@ nav ul a:hover
 {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -334,4 +346,103 @@ nav ul a:hover
 .contenu_populaire p
 {
     padding-bottom: 40px;
+}
+
+
+/* Section hebergement */
+
+#hebergements
+{
+    margin-top : 30px;
+}
+
+#hebergements h2
+{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#fenetre_hebergement
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choix_hebergement
+{
+    width: 90%;
+    height: 230px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow:5px 5px 5px #f2f2f2;
+}
+
+.image_hebergement
+{
+    width: 100%;
+    height: 130px;
+    background-size : cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom : 15px;
+}
+
+.img_cannebiere
+{
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+.hotel_port
+{
+    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+.hotel_mouettes
+{
+    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+.hotel_mer
+{
+    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");  
+}
+
+.auberge_panier
+{
+    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");  
+}
+
+.hotel_amina
+{
+    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");  
+}
+
+.choix_hebergement h3
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.choix_hebergement p
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top:10px;
+    margin-bottom : 10px;
+}
+
+.etoile
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.afficher
+{
+    font-size: 17px;
+    font-weight:bold;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
