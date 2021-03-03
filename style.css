@@ -95,24 +95,28 @@ nav
 {
    margin-top : 20px;
 }
-ul
-{
-    display :flex;
-    list-style-type: none; /*met les li sur la même ligne */
+ul {
     padding: 0;
-}
+    width: 100%;
+    text-align: center;
+  }
+  
+li {
+    display: inline;
+    width: 50%;
+  }
+  
+nav li a {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 10px;
+  }
 
-nav ul a
-{ 
-    padding-bottom: 5px;
-    width: 50%; /* dimensionne les li pour qu'ils prennent toute la largeur */
-    text-align:center;
-    border-bottom : solid 2px #f2f2f2; /* créé la bordure grise */
-}
-
-nav ul a:hover 
+nav li a:hover 
 {
-    border-bottom : solid 2px #0065fc; 
+    border-bottom : solid 3px #0065fc; 
     color: #0065fc
 }
 
@@ -725,18 +729,35 @@ footer{
     #nav_pc{
         display:flex;
     }
+
     
-    ul a{ 
-        padding-top: 20px;
-        height: 50px;
-        width: 150px;; /* dimensionne les li pour qu'ils prennent toute la largeur */
+    #nav_pc_ul ul li a { 
+        display:inline-block;
+        width: 150px;
+        height: 50px; 
         text-align:center;
         margin-right : 15px;
+    
     }
 
-    ul a:hover{
+    #nav_pc li{
+        padding-top: 30px;
+    }
+
+    #nav_pc li:hover{
+
         border-top: solid 2px #0065fc;
-        color: #0065fc;
+
+    }
+
+    #nav_pc li:hover a{
+        color : #0065fc;
+
+    }
+
+    #nav_pc_ul{
+        margin-top: 20px;
+        margin-right: 20px;
     }
 
     #inscription {
