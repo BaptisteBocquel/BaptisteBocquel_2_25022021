@@ -554,5 +554,86 @@ footer p{
 
 @media screen and (min-width: 600px){
 
+/*PARTIE RECHERCHER */
 
+#recherche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#recherche form{
+    margin-left: 120px;
+}
+
+/* PARTIE FILTRES */
+
+#filtre h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top : 45px;  
+}
+
+#choix_filtre{
+    margin-left : 30px;
+    justify-content: center;
+}
+
+/* INFOS LOGEMENTS DISPONIBLES */
+
+#info{
+    justify-content : center;
+    align-items: center;
+}
+
+#info-logo
+{
+    width: 35px;
+}
+
+/* SECTION LES PLUS POPULAIRES */
+
+#titre_populaire{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.choix_populaire{
+    width : 80%;
+}
+
+.image{
+    margin-right: 25px;
+}
+
+/* SECTION HEBERGEMENTS */
+
+#hebergements h2{
+    margin-left: 40px;
+}
+.choix_hebergement{
+    
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#fenetre_hebergement{
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+/* SECTION ACTIVITE */
+
+.choix_activite h3{
+    text-align:center;
+}
+
+/* SECTION FOOTER */
+
+footer{
+    text-align:center;
+}
 }
