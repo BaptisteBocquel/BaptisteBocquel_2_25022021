@@ -12,7 +12,7 @@ a
 }
 
 body{
-    min-width: 295px;
+    min-width: 200px;
 }
 
 *
@@ -58,6 +58,11 @@ h3
 
 /* PARTIE HEADER */
 
+#menu_pc{
+
+    display: none;
+}
+
 header
 {
     display:flex;
@@ -97,7 +102,7 @@ ul
     padding: 0;
 }
 
-ul a
+nav ul a
 { 
     padding-bottom: 5px;
     width: 50%; /* dimensionne les li pour qu'ils prennent toute la largeur */
@@ -470,16 +475,17 @@ nav ul a:hover
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .choix_activite
 {
     width: 90%;
     height: 190px;
-    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow:1px 1px 10px #555;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .image_activite
@@ -550,9 +556,9 @@ footer p{
     margin-bottom: 10px;
 }
 
-/* CSS pour les tablettes : minimum 600px) */
+/* CSS pour les tablettes : minimum 600px et maximum 1023px */
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) and (max-width: 1023px){
 
 /*PARTIE RECHERCHER */
 
@@ -614,12 +620,13 @@ footer p{
 }
 .choix_hebergement{
     
-    width: 40%;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 45%;
+    margin-right: 10px;
+    margin-left : 10px;
 }
 
 #fenetre_hebergement{
+    
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:center;
@@ -633,19 +640,43 @@ footer p{
 
 #fenetre_activite
 {
-    flex-direction:row;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+
+}
+.activite:nth-child(2){
+    order:1;
+}
+
+.activite:nth-child(4){
+    order:2;
+}
+
+.activite_1{
+    width: 50%;
+}
+
+.activite_2{
+    width: 100%;
+    display: flex;
 }
 
 #activite h2{
     margin-left: 40px;
 }
 
-.choix_activite{
+
+.activite_1 .choix_activite{
+    width : 80%;
+    
+    
+}
+
+.activite_2 .choix_activite{
     width : 40%;
-    margin-right: 20px;
-    margin-left:20px;
+    
 }
 
 .choix_activite h3{
@@ -660,8 +691,181 @@ footer{
 }
 }
 
-/* CSS POUR LES ORDINATEURS : minimum 1000px */
+/* CSS POUR LES ORDINATEURS : minimum 1024px */
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1024px){
+
+    /* SECTION HEADER + NAV */
+
+    header{
+        display :none;
+    }
+
+    nav{
+        display:none;
+    }
+
+
+    #logo_pc img{
+        width : 100px;
+        height : 50px;
+    }
+
+    #menu_pc{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center; 
+        padding-right: 30px;
+        padding-left : 30px;
+        margin-top : 20px;
+    }
+
+    #nav_pc{
+        display:flex;
+    }
     
+    ul a{ 
+        padding-top: 20px;
+        height: 50px;
+        width: 150px;; /* dimensionne les li pour qu'ils prennent toute la largeur */
+        text-align:center;
+        margin-right : 15px;
+    }
+
+    ul a:hover{
+        border-top: solid 2px #0065fc;
+        color: #0065fc;
+    }
+
+    #inscription {
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+    #inscription a{
+        color: #0065fc;
+    }
+
+    /* SECTION RECHERCHE */
+
+    #loupe{
+        visibility: hidden;
+    }
+
+    #bouton_rechercher{
+        visibility: visible;
+        width: 150px; 
+        height: 46px;
+        color: white;
+        background-color: #0065fc;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        left: -55px;
+    }
+
+    /* SECTION FILTRES */
+
+    #filtre{
+        display: flex;
+        align-items: center;
+    }
+
+    #filtre h2{
+        margin-right : 30px;
+        padding-top: 5px;
+    }
+
+    /* SECTION INFOS LOGEMENTS DISPOS */
+
+    #info-logo{
+        width: 35px;
+    }
+
+    #info{
+        align-items: center;
+    }
+
+    /* SECTIONS HEBERGEMENTS + POPULAIRES (DISPOSITIONS) */
+
+    #populaire{
+        width : 30%;
+        margin-left: 40px;
+        border-radius: 20px;
+    }
+
+    #hebergements{
+        padding-top: 35px;
+        width: 60%;
+        background-color:#f2f2f2;
+        border-radius: 20px;
+    }
+
+    #hebergements h2{
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    #dispo_pc{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    /* SECTION HEBERGEMENT */
+
+    .choix_hebergement{
+        width: 30% ;
+        margin-left: 10px;
+        margin-right:10px;
+        margin-bottom: 30px;
+    }
+
+    #fenetre_hebergement{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .afficher{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    /* SECTION ACTIVITE */
+
+    #fenetre_activite{
+        flex-direction: row;
+        justify-content:left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .activite{
+        width: 25%;
+    }
+
+    .activite_1 .choix_activite{
+        height: 400px;
+    }
+
+    .activite_1 .image_activite{
+        height : 340px;
+    }
+
+    .calanques+h3{
+        margin-left: 7px;
+    }
+
+    /* SECTION FOOTER */
+
+    footer{
+        display: flex;
+        padding-left : 30px;
+    }
+
+    footer div{
+        margin-right : 100px;
+    }
 }
