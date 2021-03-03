@@ -70,7 +70,7 @@ header
 
 #logo img
 {
-    width: 100x;
+    width: 100px;
     height: 50px;    /* Redimensionne le logo */
 }
 
@@ -312,6 +312,7 @@ nav ul a:hover
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-size: cover;
+    background-position: center;
 }
 
 .soleil_matin
@@ -321,7 +322,6 @@ nav ul a:hover
 
 .coeur_eau
 {
-    width: 67%;
     background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 
@@ -336,9 +336,10 @@ nav ul a:hover
 
 .contenu_populaire
 {
+    width: 40%;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 8px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -547,4 +548,11 @@ footer h3{
 
 footer p{
     margin-bottom: 10px;
+}
+
+/* CSS pour les tablettes : minimum 600px) */
+
+@media screen and (min-width: 600px){
+
+
 }
