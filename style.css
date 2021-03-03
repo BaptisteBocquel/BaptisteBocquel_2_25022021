@@ -359,7 +359,7 @@ nav ul a:hover
 #hebergements h2
 {
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 #fenetre_hebergement
@@ -375,21 +375,24 @@ nav ul a:hover
     height: 230px;
     margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow:5px 5px 5px #f2f2f2;
+    box-shadow:1px 1px 10px #555;
 }
 
 .image_hebergement
 {
-    width: 100%;
+    margin-left:3px;
+    margin-top: 2px;
+    width: 98%;
     height: 130px;
     background-size : cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-bottom : 15px;
+    margin-bottom : 10px;
 }
 
 .img_cannebiere
 {
+  
     background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
@@ -445,4 +448,78 @@ nav ul a:hover
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 30px;
+}
+
+/* SECTION ACTIVITES */
+
+#activite
+{
+    margin-top: 60px;
+}
+
+#activite h2
+{
+    margin-left : 25px;
+    margin-bottom : 20px;
+}
+
+#fenetre_activite
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choix_activite
+{
+    width: 90%;
+    height: 190px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow:1px 1px 10px #555;
+}
+
+.image_activite
+{
+    width: 100%;
+    height: 130px;
+    background-size : cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom : 20px;
+}
+
+.vieux_port
+{
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+.fort_pomegues
+{
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+.iles_frioul
+{
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+.calanques
+{
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+.notre_dame
+{
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+.parc_longchamp
+{
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+.choix_activite h3
+{
+    margin-left: 15px;
 }
