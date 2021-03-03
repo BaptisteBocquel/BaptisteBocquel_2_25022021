@@ -625,10 +625,32 @@ footer p{
     justify-content:center;
 }
 
+.afficher{
+    margin-left: 40px;
+}
+
 /* SECTION ACTIVITE */
+
+#fenetre_activite
+{
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#activite h2{
+    margin-left: 40px;
+}
+
+.choix_activite{
+    width : 40%;
+    margin-right: 20px;
+    margin-left:20px;
+}
 
 .choix_activite h3{
     text-align:center;
+    margin-left: 0;
 }
 
 /* SECTION FOOTER */
@@ -636,4 +658,10 @@ footer p{
 footer{
     text-align:center;
 }
+}
+
+/* CSS POUR LES ORDINATEURS : minimum 1000px */
+
+@media screen and (min-width: 1000px){
+    
 }
