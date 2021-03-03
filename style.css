@@ -3,7 +3,7 @@
 
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 a
 {
@@ -275,7 +275,8 @@ nav ul a:hover
 
 #populaire
 {
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
     margin-top : 30px;
     background-color : #f2f2f2;
     display:flex;
@@ -285,9 +286,9 @@ nav ul a:hover
 
 #titre_populaire
 {
-    width: 100%;
+    width: 87%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 20px;
 }
@@ -385,6 +386,7 @@ nav ul a:hover
     width: 98%;
     height: 130px;
     background-size : cover;
+    background-position: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-bottom : 10px;
@@ -408,7 +410,7 @@ nav ul a:hover
 
 .hotel_mer
 {
-    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");  
+    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"); 
 }
 
 .auberge_panier
@@ -484,6 +486,7 @@ nav ul a:hover
     width: 100%;
     height: 130px;
     background-size : cover;
+    background-position:center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-bottom : 20px;
@@ -522,4 +525,26 @@ nav ul a:hover
 .choix_activite h3
 {
     margin-left: 15px;
+}
+
+/* SECTION A PROPOS */
+
+footer{
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom : 20px;
+}
+
+footer div{
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+footer h3{
+    margin-bottom: 20px;;
+}
+
+footer p{
+    margin-bottom: 10px;
 }
