@@ -187,6 +187,10 @@ nav li a:hover
     background-color: #0065fc;
 }
 
+button{
+    -webkit-appearance: none;
+}
+
 
 /* SECTION FILTRE */
 
