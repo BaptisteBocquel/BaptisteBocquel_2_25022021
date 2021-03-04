@@ -839,6 +839,12 @@ footer{
         justify-content: center;
     }
 
+    /* SECTION POPULAIRE */
+
+    .contenu_populaire p{
+        padding-bottom: 20px;
+    }
+
     /* SECTION HEBERGEMENT */
 
     .choix_hebergement{
@@ -846,7 +852,9 @@ footer{
         margin-left: 10px;
         margin-right:10px;
         margin-bottom: 30px;
+        height: 250px;
     }
+
 
     #fenetre_hebergement{
         flex-direction: row;
@@ -880,10 +888,14 @@ footer{
         height : 340px;
     }
 
-    .calanques+h3{
-        margin-left: 7px;
+    .image_activite{
+        margin-bottom :10px;
     }
 
+    .image_activite h3{
+        margin-right: 10px;
+    }
+    
     /* SECTION FOOTER */
 
     footer{
