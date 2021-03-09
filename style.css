@@ -143,7 +143,7 @@ nav li a:hover
 
 #recherche form
 {
-    min-width:300px;
+    min-width:290px;
     padding-right: 0;
 }
 
@@ -162,7 +162,7 @@ nav li a:hover
 {
     font-weight: bold;
     font-size: 15px;                    /* definit la barre de recherche */
-    width: 200px;
+    width: 190px;
     padding: 13px;
     padding-bottom: 12px;
     border-top: solid 1px #f2f2f2;
