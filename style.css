@@ -143,7 +143,7 @@ nav li a:hover
 
 #recherche form
 {
-    width:295px;
+    min-width:295px;
 }
 
 #point
