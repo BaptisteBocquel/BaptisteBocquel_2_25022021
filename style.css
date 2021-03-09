@@ -143,7 +143,8 @@ nav li a:hover
 
 #recherche form
 {
-    min-width:295px;
+    min-width:300px;
+    padding-right: 0;
 }
 
 #point
@@ -721,7 +722,10 @@ footer{
     }
 
     /* SECTION RECHERCHE */
-
+    #recherche form{
+        min-width: 450px;;
+        width: 400px;
+    }
     #loupe{
         visibility: hidden;
     }
