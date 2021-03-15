@@ -54,28 +54,36 @@ h3
 
 /* PARTIE HEADER */
 
-#menu_pc{
-
-    display: none;
-}
-
-header
+#menu_pc
 {
-    display:flex;
-    justify-content: space-between;   /* aligne les elements et les place */
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top:30px;
     margin-left: 15px;
     margin-right: 15px;
+    
 }
 
+
+
+
+#menu_pc p{
+   
+    text-align: end;
+    margin-top: 20px;
+}
+
+#menu_pc p a{
+    color: #0065fc;
+}
 #logo img
 {
     width: 100px;
     height: 50px;    /* Redimensionne le logo */
 }
 
-header p
+#menu_pc p
 {
     font-weight:bold; /* Met 's'inscrire en gras */
 }
@@ -89,6 +97,7 @@ header a
 
 nav
 {
+    width: 100%;
    margin-top : 20px;
 }
 ul {
@@ -372,11 +381,19 @@ input{
     margin-left: 25px;
 }
 
-#fenetre_hebergement
+#fenetre_hebergement 
 {
+    
     display:flex;
     flex-direction: column;
     align-items: center;
+}
+
+#fenetre_hebergement a
+{
+    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .choix_hebergement
@@ -386,6 +403,7 @@ input{
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow:1px 1px 10px #555;
+    padding-top: 2px;
 }
 
 .image_hebergement
@@ -575,9 +593,19 @@ footer p{
 #hebergements h2{
     margin-left: 40px;
 }
+
+
+
+#fenetre_hebergement a{
+    
+    width:40%;
+    margin-right: 10px;
+    margin-left : 10px;
+}
+
 .choix_hebergement{
     
-    width: 45%;
+    
     margin-right: 10px;
     margin-left : 10px;
 }
@@ -595,7 +623,7 @@ footer p{
 
 /* SECTION ACTIVITE */
 
-#fenetre_activite
+#fenetre_activite 
 {
     display: flex;
     flex-direction: row;
@@ -613,25 +641,38 @@ footer p{
 
 .activite_1{
     width: 50%;
+    display:flex;
+    
 }
 
-.activite_2{
+.activite_1:nth-child(1){
+    justify-content: flex-end;
+}
+
+.activite_2 {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 #activite h2{
     margin-left: 40px;
 }
 
+.activite a{
+    display: block;
+    justify-content: center;
+    
+}
 
-.activite_1 .choix_activite{
+.activite_1 a{
     width : 80%;
+    
     
     
 }
 
-.activite_2 .choix_activite{
+.activite_2 a{
     width : 40%;
     
 }
@@ -653,73 +694,71 @@ footer{
 @media screen and (min-width: 1024px){
 
     /* SECTION HEADER + NAV */
+ 
+    #menu_pc{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 20px;
+        
+    }
 
-    header{
-        display :none;
+    #menu_pc p{
+        order: 3;
+        margin-top: 10px;
+        padding-top: 30px;
+        font-weight: bold;
+        width: 5%;
+       
+    }
+
+
+    #menu_pc p a{
+        color:#0065fc;
+    }
+
+    #logo{
+        padding-top: 30px;
+        width: 20%;
     }
 
     nav{
-        display:none;
+      width:80%;
+      margin-right: 0;
+      
+
     }
-
-
-    #logo_pc img{
-        width : 100px;
-        height : 50px;
-    }
-
-    #menu_pc{
-        display:flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: center; 
-        padding-right: 30px;
-        padding-left : 30px;
-        margin-top : 20px;
-    }
-
-    #nav_pc{
-        display:flex;
-    }
-
     
-    #nav_pc_ul ul li a { 
-        display:inline-block;
-        width: 150px;
-        height: 50px; 
-        text-align:center;
-        margin-right : 15px;
+    ul{
+        display:block;
+        display:flex;
+        width:100%;
+        justify-content: flex-end;
+    }
+
+    ul li{
+        margin-right: 10px;
+        width: 180px;
+        
+        
     
     }
-
-    #nav_pc li{
+    ul li a{
+        width :200px;
+        border: none;
         padding-top: 30px;
+        
+        
     }
 
-    #nav_pc li:hover{
-
-        border-top: solid 2px #0065fc;
-
-    }
-
-    #nav_pc li:hover a{
-        color : #0065fc;
-
-    }
-
-    #nav_pc_ul{
-        margin-top: 20px;
-        margin-right: 20px;
-    }
-
-    #inscription {
-        padding-top: 20px;
-        font-weight: bold;
-    }
-
-    #inscription a{
+    ul li a:hover{
         color: #0065fc;
+        border-top: 3px solid #0065fc;
+        border-bottom: none;
+       
     }
+
+    
 
     /* SECTION RECHERCHE */
     #recherche form{
@@ -797,15 +836,19 @@ footer{
     }
 
     /* SECTION HEBERGEMENT */
-
+    #fenetre_hebergement a{
+        display:block;
+        display:flex;
+        width: 30%;
+    }
     .choix_hebergement{
-        width: 30% ;
         margin-left: 10px;
         margin-right:10px;
         margin-bottom: 30px;
         height: 250px;
     }
 
+    
 
     #fenetre_hebergement{
         flex-direction: row;
@@ -839,6 +882,21 @@ footer{
         height : 340px;
     }
 
+    .activiteup {
+        height: 230px;
+    }
+
+    .activiteup .image_activite{
+        height: 180px;
+    }
+
+    .activitedown{
+        height: 150px;
+    }
+
+    .activitedown .image_activite{
+        height: 100px;
+    }
     .image_activite{
         margin-bottom :10px;
     }
